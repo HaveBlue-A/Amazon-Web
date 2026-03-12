@@ -7,24 +7,122 @@
     <title>Amazon E-Commerce</title>
   </head>
   <body class="bg-gray-100">
-    <nav class="flex items-center bg-gray-900 text-white px-4 py-5 gap-4">
-      <div class="text-xl font-bold">Amazon Logo</div>
-      <div class="text-sm items-center">Deliver to ?</div>
-      <div class="flex flex-1 items center">
-        <select class="bg-gray-700 text-white text-sm p-2 rounded-l">
-          <option>All</option>
-        </select>
+    <nav class="flex items-center bg-gray-900 text-white px-4 py-[9px] gap-4">
+      <div
+        class="flex items-center p-2 border border-transparent hover:border-white rounded cursor-pointer"
+      >
+        <img src="./images/Amazon_logo.png" alt="amazonLogo" class="w-24" />
+      </div>
+      <div
+        class="text-sm p-2 border border-transparent hover:border-white rounded cursor-pointer"
+      >
+        Deliver to Cambodia
+      </div>
+      <div
+        class="flex flex-1 w-full max-w-4xl rounded-lg overflow-hidden border-2 border-yellow-500 shadow-sm bg-white"
+      >
+        <div class="relative flex">
+          <select
+            style="
+              border: none;
+              outline: none;
+              appearance: none;
+              -webkit-appearance: none;
+            "
+            class="bg-gray-200 text-black text-sm py-2.5 pl-3 pr-8 h-full cursor-pointer focus:ring-0"
+          >
+            <option value="all">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="computers">Computers</option>
+            <option value="books">Books</option>
+            <option value="clothing">Clothing</option>
+            <option value="home">Home & Kitchen</option>
+            <option value="sports">Sports & Outdoors</option>
+            <option value="toys">Toys & Games</option>
+            <option value="beauty">Beauty</option>
+            <option value="grocery">Grocery</option>
+          </select>
+          <div
+            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-600"
+          >
+            <svg class="h-3 w-3 fill-current" viewBox="0 0 20 20">
+              <path
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              />
+            </svg>
+          </div>
+        </div>
         <input
+          style="border: none; outline: none"
           type="text"
           placeholder="Search Amazon"
-          class="flex-1 p-2 text-black"
+          class="flex-1 bg-white py-2.5 px-3 text-black h-full focus:ring-0"
         />
-        <button class="bg-yellow-500 p-2 rounded-r">Search</button>
+        <button
+          class="bg-yellow-500 text-black py-2.5 px-4 hover:bg-yellow-400 cursor-pointer flex items-center h-full transition-colors"
+        >
+          Search
+        </button>
       </div>
-      <div class="text-sm">EN</div>
-      <div class="text-sm">Hello, Sign in</div>
-      <div class="text-sm">Return & Orders</div>
-      <div class="text-sm">Cart(0)</div>
+      <div
+        class="text-sm p-2 border border-transparent hover:border-white rounded cursor-pointer"
+      >
+        EN
+      </div>
+      <div
+        class="text-sm p-2 border border-transparent hover:border-white rounded cursor-pointer"
+      >
+        Hello, Sign in
+      </div>
+      <div
+        class="text-sm p-2 border border-transparent hover:border-white rounded cursor-pointer"
+      >
+        Return & Orders
+      </div>
+      <div
+        class="text-sm p-2 border border-transparent hover:border-white rounded cursor-pointer"
+      >
+        Cart(0)
+      </div>
     </nav>
+    <div class="flex items-center bg-gray-800 text-white px-4 gap-6 text-sm">
+      <span
+        class="text-sm font-bold p-2 border border-transparent hover:border-white rounded cursor-pointer"
+        >All</span
+      >
+      <span
+        class="text-sm font-medium p-2 border border-transparent hover:border-white rounded cursor-pointer"
+        >Today's Deals</span
+      >
+      <span
+        class="text-sm font-medium p-2 border border-transparent hover:border-white rounded cursor-pointer"
+        >Gift Cards</span
+      >
+      <span
+        class="text-sm font-medium p-2 border border-transparent hover:border-white rounded cursor-pointer"
+        >Registry</span
+      >
+      <span
+        class="text-sm font-medium p-2 border border-transparent hover:border-white rounded cursor-pointer"
+        >Sell</span
+      >
+      <span
+        class="text-sm font-medium p-2 border border-transparent hover:border-white rounded cursor-pointer"
+        >Customer Service</span
+      >
+    </div>
+
+    <section class="relative w-full h-[400px] overflow-hidden">
+      <video
+        autoplay
+        muted
+        loop
+        class="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="./images/hero-banner.mp4" type="video/mp4" />
+      </video>
+      <div class="relative z-10 flex flex-col justify-center h-full px-12">
+
+    </section>
   </body>
 </html>
